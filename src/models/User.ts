@@ -7,7 +7,6 @@ export interface IUser {
   googleId?: string;
   firstName: string;
   lastName: string;
-  email: string;
   avatar?: string;
   date: DateTime;
 }
@@ -17,7 +16,6 @@ const UserSchema = new Schema<IUser>({
   googleId: { type: String },
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
-  email: { type: String, required: true, unique: true },
   avatar: { type: String },
   date: { type: Date, default: DateTime.now },
 });
