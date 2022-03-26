@@ -9,6 +9,8 @@ import passport from "passport";
 
 import authRouter from "./routes/api/auth";
 
+import "./strategies/googleStrategy";
+
 const app = express();
 
 connectDB();
