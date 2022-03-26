@@ -1,0 +1,19 @@
+{
+  "name": "social-media-api",
+  "version": "1.0.0",
+  "description": "API for a social media app",
+  "main": "app.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdesanker/social-media-api.git"
+  },
+  "author": "Michael Desanker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdesanker/social-media-api/issues"
+  },
+  "homepage": "https://github.com/mdesanker/social-media-api#readme"
+}
