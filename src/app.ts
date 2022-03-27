@@ -8,6 +8,7 @@ import session from "express-session";
 import passport from "passport";
 
 import authRouter from "./routes/api/auth";
+import userRouter from "./routes/api/user";
 
 import "./strategies/googleStrategy";
 
@@ -40,6 +41,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use("/auth", authRouter);
+app.use("/user", userRouter);
 
 const PORT = (process.env.PORT as string) || process.env.PORT_DEV;
 
