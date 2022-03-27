@@ -22,7 +22,7 @@ passport.use(
         });
 
         if (existingUser) {
-          cb(null, existingUser);
+          return cb(null, existingUser);
         }
 
         // Create new user
@@ -36,7 +36,7 @@ passport.use(
         });
 
         await newUser.save();
-        cb(null, newUser);
+        return cb(null, newUser);
       } catch (err: unknown) {
         if (err instanceof Error) {
           console.error(err.message);
